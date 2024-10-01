@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-red-900 dark:bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -33,11 +33,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p>123 Main Street, Colombo, Sri Lanka</p>
             <p>Phone: +94 11 123 4567</p>
-            <p>Email: info@unicefsrilanka.org</p>
+            <p>Email: info@sinhalasmiles.org</p>
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; 2023 UNICEF Sri Lanka. All rights reserved.</p>
+          <p>&copy; SINHALA Smiles - Helping Children in Sri Lanka. All rights reserved.</p>
         </div>
       </div>
     </footer>

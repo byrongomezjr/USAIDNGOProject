@@ -5,17 +5,20 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Moon, Sun, Menu } from 'lucide-react'
 
-interface HeaderProps {
-  isDarkMode: boolean
-  onDarkModeChange: (isDark: boolean) => void
-}
+// removed unused interface HeaderProps
 
-export default function Header({ isDarkMode, onDarkModeChange }: HeaderProps) {
+export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [darkMode, setDarkMode] = useState(isDarkMode)
 
   const toggleDarkMode = useCallback(() => {
-    onDarkModeChange(!isDarkMode)
-  }, [isDarkMode, onDarkModeChange])
+    if (typeof window !== 'undefined') {
+      const newMode = !darkMode
+      setDarkMode(newMode)
+      document.documentElement.classList.toggle('dark', newMode)
+      localStorage.setItem('darkMode', JSON.stringify(newMode))
+    }
+  }, [darkMode])
 
   return (
     <motion.header 
@@ -25,7 +28,7 @@ export default function Header({ isDarkMode, onDarkModeChange }: HeaderProps) {
       className="bg-white dark:bg-gray-900 shadow-md"
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-800 dark:text-white">SINHALA Smiles</Link>
+        <Link href="/" className="text-2xl font-bold text-amber-500 dark:text-white">SINHALA Smiles</Link>
         <nav className="hidden md:flex space-x-4">
           <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">About Us</Link>
           <Link href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact Us</Link>
@@ -39,9 +42,10 @@ export default function Header({ isDarkMode, onDarkModeChange }: HeaderProps) {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={toggleDarkMode} 
-            className="p-2 rounded-full bg-blue-800 dark:bg-gray-700"
+            // main color for light/dark mode sun and moon icon
+            className="p-2 rounded-full bg-amber-500 dark:bg-gray-700"
           >
-            {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {darkMode ? <Sun className="w-5 h-5 text-white" /> : <Moon className="w-5 h-5 text-white" />}
           </motion.button>
           <motion.button 
             whileHover={{ scale: 1.1 }}

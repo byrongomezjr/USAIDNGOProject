@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-blue-800 dark:bg-blue-800 text-white py-20 overflow-hidden">
+    <section className="relative bg-red-600 dark:bg-slate-800 text-white py-20 overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
@@ -25,11 +25,11 @@ export default function HeroSection() {
           className="lg:w-1/2"
         >
           <Image
-            src="/srilankankids.jpg"
+            src="/smiles.jpg"
             alt="Children in Sri Lanka"
             width={600}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-full shadow-lg"
           />
         </motion.div>
       </div>
