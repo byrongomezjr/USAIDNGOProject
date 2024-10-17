@@ -4,9 +4,24 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 
 export default function RecentUpdates() {
   const updates = [
-    { title: 'Education Initiative Launched', date: 'May 15, 2023' },
-    { title: 'Health Campaign Success', date: 'April 30, 2023' },
-    { title: 'Child Protection Workshop', date: 'April 22, 2023' }
+    { 
+      title: 'Education Initiative Launched', 
+      date: 'May 15, 2023',
+      videoId: 'e0Hw83tVS2g', // 
+      description: 'New program aims to improve access to quality education for rural children in Sri Lanka.'
+    },
+    { 
+      title: 'Health Campaign Success', 
+      date: 'April 30, 2023',
+      videoId: '5wSXQHW3xDI', // Unicef: Let's get Sri Lankan kids into s
+      description: 'Recent health campaign shows promising results in improving community well-being in Sri Lanka.'
+    },
+    { 
+      title: 'Child Protection Workshop', 
+      date: 'April 22, 2023',
+      videoId: 'tnf1-qQGujg', // We raised money for Sri Lankan kids
+      description: 'Workshop educates local leaders on child protection strategies in Sri Lankan communities.'
+    }
   ]
 
   return (
@@ -27,7 +42,15 @@ export default function RecentUpdates() {
                   <CardDescription>{update.date}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>New program aims to improve access to quality education for rural children in Sri Lanka.</p>
+                  <div className="relative w-full h-0 pb-[56.25%] mb-4">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${update.videoId}?autoplay=1&mute=1&loop=1&playlist=${update.videoId}`}
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full rounded-md"
+                    />
+                  </div>
+                  <p>{update.description}</p>
                 </CardContent>
                 <CardFooter>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

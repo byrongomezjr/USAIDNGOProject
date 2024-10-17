@@ -12,20 +12,28 @@ import Footer from './components/Footer'
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
-  const handleDarkModeChange = useCallback((newDarkMode: boolean) => {
+  const toggleDarkMode = useCallback((newDarkMode: boolean) => {
     setIsDarkMode(newDarkMode)
     document.documentElement.classList.toggle('dark', newDarkMode)
   }, [])
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
-      <Header isDarkMode={isDarkMode} onDarkModeChange={handleDarkModeChange} />
+      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
         <HeroSection />
-        <MissionStatement />
-        <WaysToGive />
-        <RecentUpdates />
-        <NewsletterSignup />
+        <section id="mission">
+          <MissionStatement />
+        </section>
+        <section id="ways-to-give">
+          <WaysToGive />
+        </section>
+        <section id="research">
+          <RecentUpdates />
+        </section>
+        <section id="contact">
+          <NewsletterSignup />
+        </section>
       </main>
       <Footer />
     </div>

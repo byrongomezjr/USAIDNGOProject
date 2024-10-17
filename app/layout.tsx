@@ -9,7 +9,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Sinhala Smiles',
+  title: 'Hearts for Sri Lanka',
   description: 'Helping children in Sri Lanka',
 }
 

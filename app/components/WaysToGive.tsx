@@ -40,6 +40,7 @@ export default function WaysToGive() {
                 </CardHeader>
                 <CardContent>
                   <p>{option.description}</p>
+                  <p>Support our programs and make a lasting impact on children&apos;s lives.</p>
                 </CardContent>
                 <CardFooter>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

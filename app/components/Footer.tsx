@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; SINHALA Smiles - Helping Children in Sri Lanka. All rights reserved.</p>
+          <p>&copy; Hearts for Sri Lanka - Helping Children in Sri Lanka. All rights reserved.</p>
         </div>
       </div>
     </footer>
