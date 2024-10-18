@@ -5,22 +5,22 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 export default function RecentUpdates() {
   const updates = [
     { 
-      title: 'Education Initiative Launched', 
-      date: 'May 15, 2023',
-      videoId: 'e0Hw83tVS2g', // 
-      description: 'New program aims to improve access to quality education for rural children in Sri Lanka.'
+      title: 'Humanitarian Crisis in Sri Lanka', 
+      date: 'July 20, 2022',
+      videoId: 'e0Hw83tVS2g', // No food for children in Sri Lanka
+      description: 'Aid organisations warn of an unfolding humanitarian disaster in Sri Lanka. 2.5 million children are not getting enough food, with Save the Children fearing one-quarter of all Sri Lankans are at the brink of malnutrition. Families are struggling to feed their children properly and put them through school.'
     },
     { 
-      title: 'Health Campaign Success', 
-      date: 'April 30, 2023',
-      videoId: '5wSXQHW3xDI', // Unicef: Let's get Sri Lankan kids into s
-      description: 'Recent health campaign shows promising results in improving community well-being in Sri Lanka.'
+      title: 'UNICEF: Getting Sri Lankan Kids Into Schools', 
+      date: 'November 5, 2014',
+      videoId: '5wSXQHW3xDI', // Unicef: Let's get Sri Lankan kids into school
+      description: 'While 98% of children complete primary school and the country has a 92% literacy rate, UNICEF and UNESCO\'s Global Initiative on Out-of-School Children aims to reach those left behind. The initiative seeks to benefit individual children and contribute to the long-term health and prosperity of communities and the world.'
     },
     { 
-      title: 'Child Protection Workshop', 
-      date: 'April 22, 2023',
-      videoId: 'tnf1-qQGujg', // We raised money for Sri Lankan kids
-      description: 'Workshop educates local leaders on child protection strategies in Sri Lankan communities.'
+      title: 'Successful Fundraiser for Sri Lankan Children in Need', 
+      date: 'February 13, 2024',
+      videoId: 'tnf1-qQGujg', // ***
+      description: 'A successful fundraiser for the Foundation of Goodness raised 2.28 Million LKR to provide 380 children across Rural Sri Lanka with essential school supplies for the new year. This initiative aims to support education in rural areas by ensuring children have the necessary materials to start their school year.'
     }
   ]
 

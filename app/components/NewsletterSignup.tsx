@@ -8,7 +8,7 @@ export default function NewsletterSignup() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-red-600 dark:bg-slate-800 py-16 text-white"
+      className="bg-red-800 dark:bg-slate-800 py-16 text-white"
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Stay Informed</h2>
