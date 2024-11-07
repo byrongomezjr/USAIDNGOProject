@@ -1,0 +1,21 @@
+{
+    "title": "Möglichkeiten zu Spenden",
+    "options": {
+        "oneTime": {
+            "title": "Einmalige Spende",
+            "description": "Bewirken Sie mit einer großzügigen einmaligen Spende sofort etwas für unsere Sache.",
+            "buttonText": "Jetzt Spenden"
+        },
+        "monthly": {
+            "title": "Monatliche Spende",
+            "description": "Unterstützen Sie unsere Jugend durch regelmäßige monatliche Spenden.",
+            "buttonText": "Monatlich Spenden"
+        },
+        "corporate": {
+            "title": "Unternehmenspartnerschaften",
+            "description": "Verbinden Sie Ihr Unternehmen mit sinnvollen sozialen Verantwortungsinitiativen für eine hoffnungsvolle Zukunft.",
+            "buttonText": "Partner Werden"
+        }
+    },
+    "impactText": "Unterstützen Sie unsere Programme und bewirken Sie nachhaltige Veränderungen im Leben von Kindern."
+}

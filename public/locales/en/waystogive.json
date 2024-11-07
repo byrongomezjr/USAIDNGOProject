@@ -1,0 +1,21 @@
+{
+    "title": "Ways to Give",
+    "options": {
+        "oneTime": {
+            "title": "One-Time Donation",
+            "description": "Make an immediate impact with a gracious single contribution to our cause.",
+            "buttonText": "Donate Now"
+        },
+        "monthly": {
+            "title": "Monthly Giving",
+            "description": "Provide ongoing support to our youth through regular monthly donations.",
+            "buttonText": "Join Monthly"
+        },
+        "corporate": {
+            "title": "Corporate Partnerships",
+            "description": "Connect your company in meaningful social responsibility initiatives in hopes of a bright future.",
+            "buttonText": "Partner With Us"
+        }
+    },
+    "impactText": "Support our programs and make a lasting impact on children's lives."
+}

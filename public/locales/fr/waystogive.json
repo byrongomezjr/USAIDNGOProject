@@ -1,0 +1,21 @@
+{
+    "title": "Façons de Donner",
+    "options": {
+        "oneTime": {
+            "title": "Don Unique",
+            "description": "Faites un impact immédiat avec une généreuse contribution unique à notre cause.",
+            "buttonText": "Donner Maintenant"
+        },
+        "monthly": {
+            "title": "Don Mensuel",
+            "description": "Apportez un soutien continu à notre jeunesse grâce à des dons mensuels réguliers.",
+            "buttonText": "Don Mensuel"
+        },
+        "corporate": {
+            "title": "Partenariats d'Entreprise",
+            "description": "Engagez votre entreprise dans des initiatives significatives de responsabilité sociale pour un avenir meilleur.",
+            "buttonText": "Devenir Partenaire"
+        }
+    },
+    "impactText": "Soutenez nos programmes et ayez un impact durable sur la vie des enfants."
+}

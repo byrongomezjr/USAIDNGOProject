@@ -11,14 +11,21 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/forms": "^0.5.9",
+    "@types/i18next": "^12.1.0",
+    "@types/react-i18next": "^7.8.3",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.9.0",
+    "i18next": "^23.16.4",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.6.2",
     "lucide-react": "^0.446.0",
-    "next": "^14.2.13",
+    "next": "^15.0.1",
+    "next-i18next": "^15.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.0",
     "react-scroll": "^1.9.0",
     "tailwind-merge": "^2.5.2"
   },
@@ -31,6 +38,6 @@
     "eslint-config-next": "^14.2.13",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   }
 }

@@ -1,45 +1,49 @@
-import Link from 'next/link'
+'use client';
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation('footer');
+  
   return (
     <footer className="bg-red-900 dark:bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">About Us</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('aboutUs.title')}</h3>
             <ul className="space-y-2">
-              <li><Link href="/mission">Our Mission</Link></li>
-              <li><Link href="/history">History</Link></li>
-              <li><Link href="/team">Our Team</Link></li>
+              <li><Link href="/mission">{t('aboutUs.mission')}</Link></li>
+              <li><Link href="/history">{t('aboutUs.history')}</Link></li>
+              <li><Link href="/team">{t('aboutUs.team')}</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Get Involved</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('getInvolved.title')}</h3>
             <ul className="space-y-2">
-              <li><Link href="/volunteer">Volunteer</Link></li>
-              <li><Link href="/careers">Careers</Link></li>
-              <li><Link href="/partner">Partner with Us</Link></li>
+              <li><Link href="/volunteer">{t('getInvolved.volunteer')}</Link></li>
+              <li><Link href="/careers">{t('getInvolved.careers')}</Link></li>
+              <li><Link href="/partner">{t('getInvolved.partner')}</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('resources.title')}</h3>
             <ul className="space-y-2">
-              <li><Link href="/research">Research</Link></li>
-              <li><Link href="/publications">Publications</Link></li>
-              <li><Link href="/faq">FAQ</Link></li>
+              <li><Link href="/research">{t('resources.research')}</Link></li>
+              <li><Link href="/publications">{t('resources.publications')}</Link></li>
+              <li><Link href="/faq">{t('resources.faq')}</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p>123 Main Street, Colombo, Sri Lanka</p>
-            <p>Phone: +94 11 123 4567</p>
-            <p>Email: info@sinhalasmiles.org</p>
+            <h3 className="text-lg font-semibold mb-4">{t('contact.title')}</h3>
+            <p>{t('contact.address')}</p>
+            <p>{t('contact.phone')}</p>
+            <p>{t('contact.email')}</p>
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; Hearts for Sri Lanka - Helping Children in Sri Lanka. All rights reserved.</p>
+          <p>{t('copyright')}</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

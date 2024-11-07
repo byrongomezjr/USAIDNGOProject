@@ -1,0 +1,10 @@
+{
+    "title": "Stay Informed",
+    "description": "Sign up for our newsletter to receive updates on our work and how you can help.",
+    "emailPlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe",
+    "successMessage": "Thank you for subscribing!",
+    "errorMessage": "An error occurred. Please try again.",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Please enter a valid email"
+}

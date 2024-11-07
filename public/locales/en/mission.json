@@ -1,0 +1,20 @@
+{
+    "title": "Our Mission",
+    "subtitle": "Nourishing Minds, Fueling Futures: Empowering Sri Lankan Children Through Education and Nutrition",
+    "mainDescription": "We work tirelessly to ensure every child in Sri Lanka has the chance to survive, thrive, and reach their full potential, regardless of their circumstances.",
+    "challengeDescription": "In the face of economic challenges and educational disruptions, our organization stands firm in its commitment to Sri Lankan children. We believe that every child deserves the opportunity to learn, grow, and thrive.",
+    "effortsList": {
+        "title": "Our comprehensive efforts include:",
+        "items": {
+            "english": "Improving English language skills from grade 1 to grade 12",
+            "education": "Guiding education and career paths, including options like getting children involved in local and national trade schools",
+            "ai": "Connecting students with AI-powered English learning programs",
+            "seminars": "Offering free seminars and degree programs in fields like Deep Learning, Machine Learning, and Programming, etc.",
+            "textbooks": "Supplying textbooks and essential school materials for children in need",
+            "teachers": "Supporting teachers and local schools to ensure uninterrupted learning",
+            "meals": "Expanding school meal programs to improve nutrition and boost attendance",
+            "transport": "Providing transportation assistance to help children reach school safely"
+        }
+    },
+    "conclusion": "Together, we can create a Sri Lanka where every child has the opportunity to be educated, healthy, and respected, with the skills and knowledge to shape their own futures."
+}

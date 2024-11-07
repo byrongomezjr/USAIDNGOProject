@@ -1,0 +1,20 @@
+{
+    "title": "Unsere Mission",
+    "subtitle": "Geister nähren, Zukunft gestalten: Sri Lankische Kinder durch Bildung und Ernährung stärken",
+    "mainDescription": "Wir arbeiten unermüdlich daran, jedem Kind in Sri Lanka die Chance zu geben, zu überleben, zu gedeihen und sein volles Potenzial zu entfalten, unabhängig von seinen Lebensumständen.",
+    "challengeDescription": "Angesichts wirtschaftlicher Herausforderungen und Bildungsunterbrechungen steht unsere Organisation fest zu ihrem Engagement für die Kinder Sri Lankas. Wir glauben, dass jedes Kind die Chance verdient zu lernen, zu wachsen und zu gedeihen.",
+    "effortsList": {
+        "title": "Unsere umfassenden Bemühungen umfassen:",
+        "items": {
+            "english": "Verbesserung der Englischkenntnisse von Klasse 1 bis Klasse 12",
+            "education": "Begleitung von Bildungs- und Karrierewegen, einschließlich Optionen wie der Einbindung von Kindern in lokale und nationale Berufsschulen",
+            "ai": "Verbindung von Schülern mit KI-gestützten Englisch-Lernprogrammen",
+            "seminars": "Angebot kostenloser Seminare und Studiengänge in Bereichen wie Deep Learning, Machine Learning und Programmierung etc.",
+            "textbooks": "Bereitstellung von Lehrbüchern und wichtigen Schulmaterialien für bedürftige Kinder",
+            "teachers": "Unterstützung von Lehrern und lokalen Schulen zur Sicherstellung eines ununterbrochenen Lernens",
+            "meals": "Erweiterung der Schulmahlzeitenprogramme zur Verbesserung der Ernährung und Steigerung der Anwesenheit",
+            "transport": "Bereitstellung von Transportunterstützung, damit Kinder sicher zur Schule gelangen können"
+        }
+    },
+    "conclusion": "Gemeinsam können wir ein Sri Lanka schaffen, in dem jedes Kind die Möglichkeit hat, gebildet, gesund und respektiert zu sein, mit den Fähigkeiten und dem Wissen, seine eigene Zukunft zu gestalten."
+}

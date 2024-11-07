@@ -1,14 +1,26 @@
+'use client';
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Button } from "@/components/ui/button"
+import { Button } from './ui/button'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function HeroSection() {
+  // Make sure we're using the correct namespace
+  const { t, i18n } = useTranslation('hero');
+
+  // Add a useEffect to verify translations are loading
+  React.useEffect(() => {
+    console.log('Current language:', i18n.language);
+    console.log('Available translations:', i18n.store.data);
+  }, [i18n.language, i18n.store.data]);
+
   return (
     <section className="relative bg-red-900 dark:bg-slate-800 text-white py-20 overflow-hidden h-[600px]">
       <div className="absolute inset-0 bg-gradient-to-r from-red-900 dark:from-slate-800 via-red-900/70 dark:via-slate-800/70 to-transparent z-10"></div>
       <Image
         src="/heartsforsrilanka.jpg"
-        alt="Children in Sri Lanka"
+        alt={t('imageAlt')}
         fill
         style={{ objectFit: 'cover' }}
         className="z-0"
@@ -20,10 +32,16 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sri Lanka&apos;s Children in Crisis: 5.5 Million Young Lives at Risk</h1>
-          <p className="text-xl mb-6">UNICEF reports that over 5.5 million children under 18 in Sri Lanka—28 percent of the population—face unprecedented challenges amidst a severe economic crisis. With 70 percent of households struggling to feed their families and education disrupted, these children urgently need support to secure their future & education.</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            {t('title')}
+          </h1>
+          <p className="text-xl mb-6">
+            {t('description')}
+          </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-white text-blue-600 hover:bg-blue-100">Donate Now</Button>
+            <Button className="bg-white text-blue-600 hover:bg-blue-100">
+              {t('donateButton')}
+            </Button>
           </motion.div>
         </motion.div>
       </div>

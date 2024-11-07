@@ -1,0 +1,21 @@
+{
+    "title": "Recent Updates",
+    "readMore": "Read More",
+    "updates": {
+        "crisis": {
+            "title": "Humanitarian Crisis in Sri Lanka",
+            "date": "July 20, 2022",
+            "description": "Aid organisations warn of an unfolding humanitarian disaster in Sri Lanka. 2.5 million children are not getting enough food, with Save the Children fearing one-quarter of all Sri Lankans are at the brink of malnutrition. Families are struggling to feed their children properly and put them through school."
+        },
+        "unicef": {
+            "title": "UNICEF: Getting Sri Lankan Kids Into Schools",
+            "date": "November 5, 2014",
+            "description": "While 98% of children complete primary school and the country has a 92% literacy rate, UNICEF and UNESCO's Global Initiative on Out-of-School Children aims to reach those left behind. The initiative seeks to benefit individual children and contribute to the long-term health and prosperity of communities and the world."
+        },
+        "fundraiser": {
+            "title": "Successful Fundraiser for Sri Lankan Children in Need",
+            "date": "February 13, 2024",
+            "description": "A successful fundraiser for the Foundation of Goodness raised 2.28 Million LKR to provide 380 children across Rural Sri Lanka with essential school supplies for the new year. This initiative aims to support education in rural areas by ensuring children have the necessary materials to start their school year."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Bleiben Sie informiert",
+    "description": "Melden Sie sich für unseren Newsletter an, um Updates über unsere Arbeit und Möglichkeiten zur Unterstützung zu erhalten.",
+    "emailPlaceholder": "E-Mail-Adresse eingeben",
+    "subscribeButton": "Abonnieren",
+    "successMessage": "Vielen Dank für Ihr Abonnement!",
+    "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "emailRequired": "E-Mail ist erforderlich",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+}

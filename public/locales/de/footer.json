@@ -1,0 +1,27 @@
+{
+    "aboutUs": {
+        "title": "Über Uns",
+        "mission": "Unsere Mission",
+        "history": "Geschichte",
+        "team": "Unser Team"
+    },
+    "getInvolved": {
+        "title": "Mitmachen",
+        "volunteer": "Ehrenamt",
+        "careers": "Karriere",
+        "partner": "Partner werden"
+    },
+    "resources": {
+        "title": "Ressourcen",
+        "research": "Forschung",
+        "publications": "Publikationen",
+        "faq": "FAQ"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "address": "123 Hauptstraße, Colombo, Sri Lanka",
+        "phone": "Telefon: +94 11 123 4567",
+        "email": "E-Mail: info@heartsforsrilanka.org"
+    },
+    "copyright": "© Hearts for Sri Lanka - Hilfe für Kinder in Sri Lanka. Alle Rechte vorbehalten."
+}

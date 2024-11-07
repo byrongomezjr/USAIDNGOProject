@@ -1,0 +1,21 @@
+{
+    "title": "Mises à Jour Récentes",
+    "readMore": "Lire Plus",
+    "updates": {
+        "crisis": {
+            "title": "Crise Humanitaire au Sri Lanka",
+            "date": "20 juillet 2022",
+            "description": "Les organisations humanitaires mettent en garde contre une catastrophe humanitaire au Sri Lanka. 2,5 millions d'enfants ne reçoivent pas assez de nourriture, Save the Children craignant qu'un quart de tous les Sri Lankais soient au bord de la malnutrition. Les familles luttent pour nourrir correctement leurs enfants et les envoyer à l'école."
+        },
+        "unicef": {
+            "title": "UNICEF : Scolariser les Enfants Sri Lankais",
+            "date": "5 novembre 2014",
+            "description": "Alors que 98% des enfants terminent l'école primaire et que le pays a un taux d'alphabétisation de 92%, l'Initiative mondiale de l'UNICEF et de l'UNESCO sur les enfants non scolarisés vise à atteindre ceux qui sont laissés pour compte. L'initiative cherche à bénéficier aux enfants individuellement et à contribuer à la santé et à la prospérité à long terme des communautés et du monde."
+        },
+        "fundraiser": {
+            "title": "Collecte de Fonds Réussie pour les Enfants Sri Lankais dans le Besoin",
+            "date": "13 février 2024",
+            "description": "Une collecte de fonds réussie pour la Foundation of Goodness a permis de récolter 2,28 millions de LKR pour fournir à 380 enfants du Sri Lanka rural des fournitures scolaires essentielles pour la nouvelle année. Cette initiative vise à soutenir l'éducation dans les zones rurales en s'assurant que les enfants disposent du matériel nécessaire pour commencer leur année scolaire."
+        }
+    }
+}

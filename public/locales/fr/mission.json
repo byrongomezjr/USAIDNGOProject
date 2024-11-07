@@ -1,0 +1,20 @@
+{
+    "title": "Notre Mission",
+    "subtitle": "Nourrir les Esprits, Alimenter les Avenirs : Autonomiser les Enfants Sri Lankais par l'Éducation et la Nutrition",
+    "mainDescription": "Nous travaillons sans relâche pour garantir que chaque enfant au Sri Lanka ait la chance de survivre, de s'épanouir et d'atteindre son plein potentiel, quelles que soient ses circonstances.",
+    "challengeDescription": "Face aux défis économiques et aux perturbations éducatives, notre organisation reste ferme dans son engagement envers les enfants sri lankais. Nous croyons que chaque enfant mérite l'opportunité d'apprendre, de grandir et de s'épanouir.",
+    "effortsList": {
+        "title": "Nos efforts complets incluent :",
+        "items": {
+            "english": "Amélioration des compétences en anglais de la 1ère à la 12ème année",
+            "education": "Orientation des parcours éducatifs et professionnels, y compris des options comme l'implication des enfants dans les écoles professionnelles locales et nationales",
+            "ai": "Connexion des étudiants avec des programmes d'apprentissage de l'anglais basés sur l'IA",
+            "seminars": "Offre de séminaires gratuits et de programmes de diplômes dans des domaines comme le Deep Learning, le Machine Learning et la Programmation, etc.",
+            "textbooks": "Fourniture de manuels scolaires et de matériel scolaire essentiel pour les enfants dans le besoin",
+            "teachers": "Soutien aux enseignants et aux écoles locales pour assurer un apprentissage ininterrompu",
+            "meals": "Extension des programmes de repas scolaires pour améliorer la nutrition et augmenter la fréquentation",
+            "transport": "Fourniture d'une assistance au transport pour aider les enfants à atteindre l'école en toute sécurité"
+        }
+    },
+    "conclusion": "Ensemble, nous pouvons créer un Sri Lanka où chaque enfant a la possibilité d'être éduqué, en bonne santé et respecté, avec les compétences et les connaissances pour façonner son propre avenir."
+}
