@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# USAID Donation Management Platform
 
-## Getting Started
+## Overview
+A donation management platform developed for USAID as part of Rutgers University's senior capstone project. The platform streamlines charitable giving processes, specifically focused on supporting underprivileged children in Sri Lanka.
 
-First, run the development server:
+## 🎯 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Donation Management**: Streamlined process for managing and tracking donations
+- **Child Support Tracking**: System to monitor support provided to children
+- **Internationalization**: Multi-language support using i18next
+- **Responsive Design**: Mobile-first approach with smooth animations
+- **Secure Transactions**: Safe and transparent donation processing
+
+## 🛠️ Tech Stack
+
+- **Frontend**:
+  - Next.js (React Framework)
+  - TypeScript (.tsx files)
+  - Tailwind CSS for styling
+  - Framer Motion for animations
+  - i18next for internationalization
+
+- **Backend**:
+  - SQL Database
+  - Next.js API Routes
+
+## 📋 Prerequisites
+
+- Node.js (version 14.0 or higher)
+- npm or yarn package manager
+- SQL Database
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/byrongomezjr/USAIDNGOProject.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   cd usaidngoproject
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Create and open .env.local file**
+      ```bash
+      touch .env.local
+      open -e .env.local
+      ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 💻 Project Structure
+
+```
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Next.js pages and API routes
+│   ├── styles/        # Global styles and Tailwind configuration
+│   ├── lib/           # Utility functions and helpers
+│   └── types/         # TypeScript type definitions
+├── public/            # Static assets
+└── locales/          # i18next translation files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Internationalization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses i18next for managing translations. Available languages:
+- Sinhalese
+- Tamil
+- English
+- German
+- French
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/contribute`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/contribute`)
+5. Create a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👥 Team
 
-## Deploy on Vercel
+- Byron Gomez Jr - Project Lead
+- Niekelle Bloomfield
+- Adam Shimou
+- Olumayowa Otunuga
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙏 Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- USAID for their support and collaboration
+- Rutgers University Computer Science Department
+- Professor Dr. Galathara Kahanda
+
+## 📞 Contact
+
+For questions or support, please contact byrongomezjr@protonmail.com
