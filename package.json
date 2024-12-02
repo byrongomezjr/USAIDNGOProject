@@ -30,7 +30,7 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "@types/node": "^20.16.10",
+    "@types/node": "20.17.9",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18",
     "@types/react-scroll": "^1.8.10",
@@ -38,6 +38,6 @@
     "eslint-config-next": "^14.2.13",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.3"
+    "typescript": "5.7.2"
   }
 }
