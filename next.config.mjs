@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
     webpack: (config) => {
         config.resolve.fallback = {
             ...config.resolve.fallback,
@@ -7,7 +8,6 @@ const nextConfig = {
         };
         return config;
     },
-    // Add any other Next.js config options you need
 };
 
 export default nextConfig;
