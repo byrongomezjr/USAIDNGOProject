@@ -13,6 +13,7 @@
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@stripe/stripe-js": "^5.2.0",
+    "@supabase/supabase-js": "^2.47.6",
     "@tailwindcss/forms": "^0.5.9",
     "@types/i18next": "^12.1.0",
     "@types/react-i18next": "^7.8.3",
