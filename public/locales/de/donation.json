@@ -1,0 +1,12 @@
+{
+    "formTitle": "Spenden Sie",
+    "secureHeader": "Sichere Spende",
+    "imageTitle": "Helfen Sie, Kinderleben zu retten",
+    "imageDescription": "Ihre Spende hilft, dass Kinder die benötigte Ernährung, Wasser, Schutz, Bildung und Gesundheitsversorgung erhalten.",
+    "giveOnce": "Einmalig spenden",
+    "giveMonthly": "Monatlich spenden",
+    "otherAmount": "Anderer Betrag",
+    "donateButton": "Spenden",
+    "successMessage": "Vielen Dank für Ihre Spende!",
+    "errorMessage": "Bei der Verarbeitung Ihrer Spende ist ein Fehler aufgetreten."
+}

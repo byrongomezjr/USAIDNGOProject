@@ -100,7 +100,7 @@ export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
             to="mission" 
             smooth={true} 
             duration={500} 
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            className="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer"
           >
             {t('Our Mission')}
           </ScrollLink>
@@ -108,7 +108,7 @@ export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
             to="ways-to-give" 
             smooth={true} 
             duration={500} 
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            className="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer"
           >
             {t('Ways to Give')}
           </ScrollLink>
@@ -116,7 +116,7 @@ export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
             to="research" 
             smooth={true} 
             duration={500} 
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            className="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer"
           >
             {t('Research')}
           </ScrollLink>
@@ -124,13 +124,13 @@ export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
             to="contact" 
             smooth={true} 
             duration={500} 
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            className="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer"
           >
             {t('Contact Us')}
           </ScrollLink>
           <Link 
             href="/login" 
-            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            className="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400"
           >
             {t('Log In')}
           </Link>

@@ -1,0 +1,12 @@
+{
+    "formTitle": "Faire un don",
+    "secureHeader": "Don sécurisé",
+    "imageTitle": "Aidez à sauver la vie des enfants",
+    "imageDescription": "Votre don aide à garantir que les enfants reçoivent la nutrition, l'eau, la protection, l'éducation et les soins de santé dont ils ont besoin.",
+    "giveOnce": "Donner une fois",
+    "giveMonthly": "Don mensuel",
+    "otherAmount": "Autre montant",
+    "donateButton": "Faire un don",
+    "successMessage": "Merci pour votre don !",
+    "errorMessage": "Une erreur est survenue lors du traitement de votre don."
+}

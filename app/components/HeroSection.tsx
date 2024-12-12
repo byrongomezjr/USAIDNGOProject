@@ -2,18 +2,13 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from './ui/button'
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import DonationForm from './DonationForm'
 
 export default function HeroSection() {
-  // Make sure we're using the correct namespace
-  const { t, i18n } = useTranslation('hero');
-
-  // Add a useEffect to verify translations are loading
-  React.useEffect(() => {
-    console.log('Current language:', i18n.language);
-    console.log('Available translations:', i18n.store.data);
-  }, [i18n.language, i18n.store.data]);
+  const { t } = useTranslation('hero');
+  const [isDonationFormOpen, setIsDonationFormOpen] = useState(false);
 
   return (
     <section className="relative bg-red-900 dark:bg-slate-800 text-white py-20 overflow-hidden h-[600px]">
@@ -39,10 +34,19 @@ export default function HeroSection() {
             {t('description')}
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-white text-blue-600 hover:bg-blue-100">
+            <Button 
+              className="bg-white text-stone-800 hover:bg-stone-100"
+              onClick={() => setIsDonationFormOpen(true)}
+            >
               {t('donateButton')}
             </Button>
           </motion.div>
+
+          {/* Updated DonationForm implementation */}
+          <DonationForm 
+            isOpen={isDonationFormOpen}
+            onClose={() => setIsDonationFormOpen(false)}
+          />
         </motion.div>
       </div>
     </section>

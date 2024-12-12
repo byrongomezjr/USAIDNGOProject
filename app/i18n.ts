@@ -51,6 +51,12 @@ import frRecentUpdates from '../public/locales/fr/recentupdates.json';
 import siRecentUpdates from '../public/locales/si/recentupdates.json';
 import taRecentUpdates from '../public/locales/ta/recentupdates.json';
 
+import enDonation from '../public/locales/en/donation.json';
+import deDonation from '../public/locales/de/donation.json';
+import frDonation from '../public/locales/fr/donation.json';
+import siDonation from '../public/locales/si/donation.json';
+import taDonation from '../public/locales/ta/donation.json';
+
 const i18nInstance = i18next.createInstance();
 
 i18nInstance
@@ -65,7 +71,8 @@ i18nInstance
                 mission: enMission,
                 newsletter: enNewsletter,
                 waystogive: enWaysToGive,
-                recentupdates: enRecentUpdates
+                recentupdates: enRecentUpdates,
+                donation: enDonation
             },
             de: {
                 translation: deTranslations,
@@ -74,7 +81,8 @@ i18nInstance
                 mission: deMission,
                 newsletter: deNewsletter,
                 waystogive: deWaysToGive,
-                recentupdates: deRecentUpdates
+                recentupdates: deRecentUpdates,
+                donation: deDonation
             },
             fr: {
                 translation: frTranslations,
@@ -83,7 +91,8 @@ i18nInstance
                 mission: frMission,
                 newsletter: frNewsletter,
                 waystogive: frWaysToGive,
-                recentupdates: frRecentUpdates
+                recentupdates: frRecentUpdates,
+                donation: frDonation
             },
             si: {
                 translation: siTranslations,
@@ -92,7 +101,8 @@ i18nInstance
                 mission: siMission,
                 newsletter: siNewsletter,
                 waystogive: siWaysToGive,
-                recentupdates: siRecentUpdates
+                recentupdates: siRecentUpdates,
+                donation: siDonation
             },
             ta: {
                 translation: taTranslations,
@@ -101,7 +111,8 @@ i18nInstance
                 mission: taMission,
                 newsletter: taNewsletter,
                 waystogive: taWaysToGive,
-                recentupdates: taRecentUpdates
+                recentupdates: taRecentUpdates,
+                donation: taDonation
             }
         },
         fallbackLng: 'en',

@@ -9,17 +9,20 @@ export default function RecentUpdates() {
   const { t } = useTranslation('recentupdates');
 
   const updates = [
-    { 
+    {
       key: 'crisis',
       videoId: 'e0Hw83tVS2g', // No food for children in Sri Lanka
+      link: 'https://www.hrw.org/news/2022/11/24/sri-lanka-brink-humanitarian-crisis'
     },
-    { 
+    {
       key: 'unicef',
       videoId: '5wSXQHW3xDI', // Unicef: Let's get Sri Lankan kids into school
+      link: 'https://www.unicef.org/srilanka/education'
     },
-    { 
+    {
       key: 'fundraiser',
       videoId: 'tnf1-qQGujg',
+      link: 'https://unconditionalcompassion.org/empowerment-sectors-2-2-6/'
     }
   ];
 
@@ -53,7 +56,9 @@ export default function RecentUpdates() {
                 </CardContent>
                 <CardFooter>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button variant="outline">{t('readMore')}</Button>
+                    <a href={update.link} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline">{t('readMore')}</Button>
+                    </a>
                   </motion.div>
                 </CardFooter>
               </Card>

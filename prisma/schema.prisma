@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Donation {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String
+  email     String
+  amount    Decimal  @db.Decimal
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz
+}
