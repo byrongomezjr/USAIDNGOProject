@@ -71,7 +71,7 @@ export default function WaysToGive() {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16" id="faq">
           <h2 className="text-3xl font-bold mb-8">{t('faqTitle')}</h2>
           <div className="space-y-4">
             {(faqItems as Array<{question: string; answer: string}>).map((item, index) => (

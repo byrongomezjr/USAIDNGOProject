@@ -57,6 +57,12 @@ import frDonation from '../public/locales/fr/donation.json';
 import siDonation from '../public/locales/si/donation.json';
 import taDonation from '../public/locales/ta/donation.json';
 
+import enTeam from '../public/locales/en/team.json';
+import deTeam from '../public/locales/de/team.json';
+import frTeam from '../public/locales/fr/team.json';
+import siTeam from '../public/locales/si/team.json';
+import taTeam from '../public/locales/ta/team.json';
+
 const i18nInstance = i18next.createInstance();
 
 i18nInstance
@@ -72,7 +78,8 @@ i18nInstance
                 newsletter: enNewsletter,
                 waystogive: enWaysToGive,
                 recentupdates: enRecentUpdates,
-                donation: enDonation
+                donation: enDonation,
+                team: enTeam
             },
             de: {
                 translation: deTranslations,
@@ -82,7 +89,8 @@ i18nInstance
                 newsletter: deNewsletter,
                 waystogive: deWaysToGive,
                 recentupdates: deRecentUpdates,
-                donation: deDonation
+                donation: deDonation,
+                team: deTeam
             },
             fr: {
                 translation: frTranslations,
@@ -92,7 +100,8 @@ i18nInstance
                 newsletter: frNewsletter,
                 waystogive: frWaysToGive,
                 recentupdates: frRecentUpdates,
-                donation: frDonation
+                donation: frDonation,
+                team: frTeam
             },
             si: {
                 translation: siTranslations,
@@ -102,7 +111,8 @@ i18nInstance
                 newsletter: siNewsletter,
                 waystogive: siWaysToGive,
                 recentupdates: siRecentUpdates,
-                donation: siDonation
+                donation: siDonation,
+                team: siTeam
             },
             ta: {
                 translation: taTranslations,
@@ -112,7 +122,8 @@ i18nInstance
                 newsletter: taNewsletter,
                 waystogive: taWaysToGive,
                 recentupdates: taRecentUpdates,
-                donation: taDonation
+                donation: taDonation,
+                team: taTeam
             }
         },
         fallbackLng: 'en',

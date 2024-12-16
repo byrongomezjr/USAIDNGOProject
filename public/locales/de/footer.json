@@ -1,25 +1,17 @@
 {
     "aboutUs": {
-        "title": "Über Uns",
+        "title": "Über uns",
         "mission": "Unsere Mission",
-        "history": "Geschichte",
         "team": "Unser Team"
-    },
-    "getInvolved": {
-        "title": "Mitmachen",
-        "volunteer": "Ehrenamt",
-        "careers": "Karriere",
-        "partner": "Partner werden"
     },
     "resources": {
         "title": "Ressourcen",
-        "research": "Forschung",
-        "publications": "Publikationen",
-        "faq": "FAQ"
+        "recentUpdates": "Aktuelle Updates",
+        "faq": "Häufige Fragen"
     },
     "contact": {
         "title": "Kontakt",
-        "address": "123 Hauptstraße, Colombo, Sri Lanka",
+        "address": "123 Main Street, Colombo, Sri Lanka",
         "phone": "Telefon: +94 11 123 4567",
         "email": "E-Mail: info@heartsforsrilanka.org"
     },

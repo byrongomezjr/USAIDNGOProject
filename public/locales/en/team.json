@@ -1,0 +1,22 @@
+{
+    "title": "Our Team",
+    "backButton": "Back",
+    "facultyTitle": "Faculty Advisors",
+    "teamTitle": "Team Members",
+    "roles": {
+        "professor": "Computer Science Professor",
+        "mentor": "Project Mentor",
+        "pm": "Project Manager",
+        "member-one": "Team Member",
+        "member-two": "Team Member",
+        "member-three": "Team Member"
+    },
+    "bio": {
+        "kahanda": "Dr. Kahanda leads the research and development of our project as well as the overall project management and coordination.",
+        "malky": "Dr. Widanaarachchi provides guidance and mentorship to the team by providing resources and support.",
+        "byron": "Byron manages project development and team coordination by ensuring the team is on track as well as pushing code for production and deployment, debugging, and testing.",
+        "adam": "Adam contributes to frontend development and ensuring chat bot functionality is implemented.",
+        "niekelle": "Niekelle focuses on system architecture and development by ensuring the project has a database foundation.",
+        "olumayowa": "Olumayowa works on frontend development and user experience by adding research value to the payment process."
+    }
+}

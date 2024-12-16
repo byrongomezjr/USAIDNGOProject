@@ -2,19 +2,11 @@
     "aboutUs": {
         "title": "About Us",
         "mission": "Our Mission",
-        "history": "History",
         "team": "Our Team"
-    },
-    "getInvolved": {
-        "title": "Get Involved",
-        "volunteer": "Volunteer",
-        "careers": "Careers",
-        "partner": "Partner with Us"
     },
     "resources": {
         "title": "Resources",
-        "research": "Research",
-        "publications": "Publications",
+        "recentUpdates": "Recent Updates",
         "faq": "FAQ"
     },
     "contact": {
