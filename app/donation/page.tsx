@@ -13,7 +13,7 @@ export default function DonationPage() {
     <div>
       <h1>Donate to Our Cause</h1>
       <DonationForm 
-        isOpen={isOpen} 
+        isOpen={isOpen}
         onClose={handleClose}
       />
     </div>

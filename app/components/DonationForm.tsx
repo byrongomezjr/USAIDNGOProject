@@ -13,6 +13,8 @@ import {
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => void }) {
   const stripe = useStripe();
   const elements = useElements();
@@ -51,6 +53,17 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
 
   return (
     <div className="space-y-4">
+      <div className="flex justify-end">
+        <button
+          onClick={onClose}
+          className="p-2 hover:bg-gray-100 rounded-full"
+          aria-label="Close"
+        >
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         <PaymentElement />
         {error && <div className="text-red-500">{error}</div>}
