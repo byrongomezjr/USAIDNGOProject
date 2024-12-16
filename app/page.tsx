@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
-        <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
         <DialogFlow />
         <HeroSection />
         <section id="mission">

@@ -51,11 +51,11 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 p-2 md:p-4">
       <div className="flex justify-end">
         <button
           onClick={onClose}
-          className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300"
+          className="p-3 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300"
           aria-label="Close"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,21 +63,21 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
           </svg>
         </button>
       </div>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <PaymentElement />
-        {errorMessage && <div className="text-red-500">{errorMessage}</div>}
-        <div className="flex space-x-4">
+        {errorMessage && <div className="text-red-500 text-sm">{errorMessage}</div>}
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
           <button
             type="button"
             onClick={onBack}
-            className="flex-1 py-3 px-4 border border-gray-300 dark:border-gray-600 rounded-md text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+            className="w-full py-3 px-4 border border-gray-300 dark:border-gray-600 rounded-md text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           >
             {t('back')}
           </button>
           <button
             type="submit"
             disabled={!stripe || processing}
-            className="flex-1 py-3 px-4 bg-red-700 text-white rounded-md hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full py-3 px-4 bg-red-700 text-white rounded-md hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {processing ? t('processing') : t('completeDonation')}
           </button>
@@ -170,14 +170,15 @@ export default function DonationForm({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-[800px] bg-white dark:bg-gray-800">
+      <DialogContent className="sm:max-w-[800px] bg-white dark:bg-gray-800 overflow-y-auto max-h-[90vh] md:max-h-[80vh] p-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-          <div className="relative h-[200px] md:h-full md:min-h-[600px]">
+          <div className="relative h-[250px] md:h-full md:min-h-[500px] w-full">
             <Image
               src="/tamilgirls.jpg"
               alt={t('imageAlt')}
               className="object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 bg-gradient-to-t from-black/70 to-transparent text-white">
@@ -186,7 +187,7 @@ export default function DonationForm({
             </div>
           </div>
 
-          <div className="p-4 md:p-6 bg-white dark:bg-gray-800 dark:text-gray-100">
+          <div className="p-6 md:p-8 bg-white dark:bg-gray-800 dark:text-gray-100 relative">
             <DialogHeader>
               <DialogTitle className="text-center text-2xl mb-6 text-stone-700 dark:text-gray-100">
                 {t('title')}
@@ -236,7 +237,7 @@ export default function DonationForm({
                         setAmount(preset);
                         setCustomAmount('');
                       }}
-                      className={`py-2 px-4 rounded-md border transition-colors ${
+                      className={`py-3 px-4 rounded-md border transition-colors ${
                         amount === preset 
                           ? 'border-red-500 bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300' 
                           : 'border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700'
@@ -267,7 +268,7 @@ export default function DonationForm({
                   placeholder={t('name')}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-3 md:p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent text-base"
                   required
                 />
                 <input
@@ -275,7 +276,7 @@ export default function DonationForm({
                   placeholder={t('email')}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent text-base"
                   required
                 />
 
