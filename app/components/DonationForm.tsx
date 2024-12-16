@@ -43,7 +43,7 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
       if (confirmError) {
         setErrorMessage(confirmError.message || 'An error occurred');
       }
-    } catch (err) {
+    } catch (_err) {
       setErrorMessage('An unexpected error occurred');
     } finally {
       setProcessing(false);
@@ -103,7 +103,7 @@ export default function DonationForm({
   const [customAmount, setCustomAmount] = useState<string>('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [error, setError] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const predefinedAmounts = ['1000', '500', '300', '100', '80', '50'];
@@ -111,12 +111,12 @@ export default function DonationForm({
   const handleInitiatePayment = async () => {
     const finalAmount = customAmount || amount;
     if (!finalAmount || !name || !email) {
-      setError('Please fill in all required fields');
+      setErrorMessage('Please fill in all required fields');
       return;
     }
 
     setIsLoading(true);
-    setError(null);
+    setErrorMessage(null);
 
     try {
       const response = await fetch('/api/donations', {
@@ -143,9 +143,9 @@ export default function DonationForm({
       } else {
         throw new Error('No client secret received');
       }
-    } catch (error) {
-      console.error('Payment error:', error);
-      setError(error instanceof Error ? error.message : 'An error occurred');
+    } catch (err) {
+      console.error('Payment error:', err);
+      setErrorMessage(err instanceof Error ? err.message : 'An error occurred');
     } finally {
       setIsLoading(false);
     }
@@ -153,6 +153,7 @@ export default function DonationForm({
 
   const handleBack = () => {
     setClientSecret(null);
+    setErrorMessage(null);
   };
 
   const handleClose = () => {
@@ -161,8 +162,7 @@ export default function DonationForm({
     setCustomAmount('');
     setName('');
     setEmail('');
-    setError(null);
-    setIsLoading(false);
+    setErrorMessage(null);
     onClose();
   };
 
@@ -294,6 +294,7 @@ export default function DonationForm({
             )}
           </div>
         </div>
+        {errorMessage && <div className="text-red-500 mt-2">{errorMessage}</div>}
       </DialogContent>
     </Dialog>
   );
