@@ -17,7 +17,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => void }) {
   const stripe = useStripe();
   const elements = useElements();
-  const [error, setError] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [processing, setProcessing] = useState(false);
   const { t } = useTranslation('donation');
 
@@ -29,26 +29,25 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
     try {
       const { error: submitError } = await elements.submit();
       if (submitError) {
-        setError(submitError.message || 'An error occurred');
-        setProcessing(false);
+        setErrorMessage(submitError.message || 'An error occurred');
         return;
       }
 
       const { error: confirmError } = await stripe.confirmPayment({
         elements,
         confirmParams: {
-          return_url: `${window.location.origin}/donation/success`,
+          return_url: window.location.href,
         },
       });
 
       if (confirmError) {
-        setError(confirmError.message || 'An error occurred');
+        setErrorMessage(confirmError.message || 'An error occurred');
       }
-    } catch (error) {
-      setError('An unexpected error occurred');
-      console.error('Error:', error);
+    } catch (err) {
+      setErrorMessage('An unexpected error occurred');
+    } finally {
+      setProcessing(false);
     }
-    setProcessing(false);
   };
 
   return (
@@ -66,7 +65,7 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
       </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         <PaymentElement />
-        {error && <div className="text-red-500">{error}</div>}
+        {errorMessage && <div className="text-red-500">{errorMessage}</div>}
         <div className="flex space-x-4">
           <button
             type="button"
