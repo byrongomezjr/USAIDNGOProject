@@ -217,7 +217,7 @@ export default function Header({ isDarkMode }: { isDarkMode: boolean }) {
             duration={500} 
             className="block px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
           >
-            {t('Contact Us')}
+            {t('Become a Supporter')}
           </ScrollLink>
         </nav>
       )}

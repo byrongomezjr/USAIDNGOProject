@@ -171,22 +171,22 @@ export default function DonationForm({
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="sm:max-w-[800px] bg-white dark:bg-gray-800">
-        <div className="grid grid-cols-2 gap-0">
-          <div className="relative h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div className="relative h-[200px] md:h-full md:min-h-[600px]">
             <Image
               src="/tamilgirls.jpg"
               alt={t('imageAlt')}
-              className="object-cover rounded-l-lg"
+              className="object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg"
               fill
               priority
             />
-            <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent text-white">
-              <h2 className="text-xl font-bold mb-2">{t('helpTitle')}</h2>
-              <p className="text-sm">{t('helpDescription')}</p>
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 bg-gradient-to-t from-black/70 to-transparent text-white">
+              <h2 className="text-lg md:text-xl font-bold mb-2">{t('helpTitle')}</h2>
+              <p className="text-xs md:text-sm">{t('helpDescription')}</p>
             </div>
           </div>
 
-          <div className="p-6 bg-white dark:bg-gray-800 dark:text-gray-100">
+          <div className="p-4 md:p-6 bg-white dark:bg-gray-800 dark:text-gray-100">
             <DialogHeader>
               <DialogTitle className="text-center text-2xl mb-6 text-stone-700 dark:text-gray-100">
                 {t('title')}
@@ -202,11 +202,11 @@ export default function DonationForm({
                   <span className="text-xl font-semibold text-stone-700 dark:text-gray-100">{t('secureHeader')}</span>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                   <button
                     type="button"
                     onClick={() => setDonationType('once')}
-                    className={`flex-1 py-2 px-4 rounded-md border ${
+                    className={`py-3 md:py-2 px-4 rounded-md border ${
                       donationType === 'once' 
                         ? 'border-red-500 bg-red-50 text-slate-700' 
                         : 'border-gray-300'
@@ -217,7 +217,7 @@ export default function DonationForm({
                   <button
                     type="button"
                     onClick={() => setDonationType('monthly')}
-                    className={`flex-1 py-2 px-4 rounded-md border ${
+                    className={`py-3 md:py-2 px-4 rounded-md border ${
                       donationType === 'monthly' 
                         ? 'border-red-500 bg-red-50 text-slate-700' 
                         : 'border-gray-300'
@@ -227,7 +227,7 @@ export default function DonationForm({
                   </button>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
                   {predefinedAmounts.map((preset) => (
                     <button
                       key={preset}
@@ -267,7 +267,7 @@ export default function DonationForm({
                   placeholder={t('name')}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full p-3 md:p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   required
                 />
                 <input
