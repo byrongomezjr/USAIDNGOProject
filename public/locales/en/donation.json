@@ -1,12 +1,16 @@
 {
-    "formTitle": "Make a Donation",
-    "secureHeader": "Secure donation",
-    "imageTitle": "Help Save Children's Lives",
-    "imageDescription": "Your donation helps ensure children get the nutrition, water, protection, education and health care they need.",
-    "giveOnce": "Give once",
-    "giveMonthly": "Monthly",
-    "otherAmount": "Other amount",
-    "donateButton": "Donate",
-    "successMessage": "Thank you for your donation!",
-    "errorMessage": "There was an error processing your donation."
+    "title": "Make a Donation",
+    "secureHeader": "Secure Donation",
+    "giveOnce": "Give Once",
+    "giveMonthly": "Give Monthly",
+    "otherAmount": "Other Amount",
+    "name": "Name",
+    "email": "Email",
+    "continue": "Continue to Payment",
+    "processing": "Processing...",
+    "back": "Back",
+    "completeDonation": "Complete Donation",
+    "imageAlt": "Support Tamil Girls",
+    "helpTitle": "Help Save Children's Lives",
+    "helpDescription": "Your donation helps ensure children get the nutrition, clean water, protection, education and health care they need."
 }

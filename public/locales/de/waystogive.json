@@ -3,19 +3,29 @@
     "options": {
         "oneTime": {
             "title": "Einmalige Spende",
-            "description": "Bewirken Sie mit einer großzügigen einmaligen Spende sofort etwas für unsere Sache.",
-            "buttonText": "Jetzt Spenden"
+            "description": "Bewirken Sie sofort etwas mit einer einmaligen Spende.",
+            "buttonText": "Einmalig spenden"
         },
         "monthly": {
             "title": "Monatliche Spende",
-            "description": "Unterstützen Sie unsere Jugend durch regelmäßige monatliche Spenden.",
-            "buttonText": "Monatlich Spenden"
-        },
-        "corporate": {
-            "title": "Unternehmenspartnerschaften",
-            "description": "Verbinden Sie Ihr Unternehmen mit sinnvollen sozialen Verantwortungsinitiativen für eine hoffnungsvolle Zukunft.",
-            "buttonText": "Partner Werden"
+            "description": "Unterstützen Sie unsere Arbeit mit einer regelmäßigen monatlichen Spende.",
+            "buttonText": "Monatlich spenden"
         }
     },
-    "impactText": "Unterstützen Sie unsere Programme und bewirken Sie nachhaltige Veränderungen im Leben von Kindern."
+    "impactText": "Ihr Beitrag bewirkt einen echten Unterschied im Leben der Bedürftigen.",
+    "faqTitle": "Häufig gestellte Fragen zu Spenden",
+    "faqItems": [
+        {
+            "question": "Sind meine Spenden steuerlich absetzbar?",
+            "answer": "Ja, alle Spenden an Hearts for Sri Lanka sind steuerlich absetzbar. Sie erhalten auch eine Spendenbescheinigung. Alle Spenden werden über Stripe abgewickelt, einen sicheren und vertrauenswürdigen Zahlungsdienstleister, der 100% transparent ist."
+        },
+        {
+            "question": "Wie misst Hearts for Sri Lanka die Wirksamkeit seiner Programme?",
+            "answer": "Hearts for Sri Lanka verwendet verschiedene Kennzahlen und Indikatoren, um die Wirksamkeit seiner Programme zu messen. Wir sind eine kleine Organisation, die ständig lernt und sich verbessert. Wir sind auch transparent bezüglich unserer Programme und Ergebnisse und werden die Resultate mit Ihnen teilen, sobald sie vorliegen."
+        },
+        {
+            "question": "Wie hilft meine Spende Kindern in Not?",
+            "answer": "Weitere Informationen über unsere Programme und wie Ihre Spende Kindern in Not hilft, finden Sie in unserem Abschnitt zum Leitbild."
+        }
+    ]
 }

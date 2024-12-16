@@ -3,19 +3,29 @@
     "options": {
         "oneTime": {
             "title": "Don Unique",
-            "description": "Faites un impact immédiat avec une généreuse contribution unique à notre cause.",
-            "buttonText": "Donner Maintenant"
+            "description": "Faites un impact immédiat avec un don unique.",
+            "buttonText": "Donner une fois"
         },
         "monthly": {
             "title": "Don Mensuel",
-            "description": "Apportez un soutien continu à notre jeunesse grâce à des dons mensuels réguliers.",
-            "buttonText": "Don Mensuel"
-        },
-        "corporate": {
-            "title": "Partenariats d'Entreprise",
-            "description": "Engagez votre entreprise dans des initiatives significatives de responsabilité sociale pour un avenir meilleur.",
-            "buttonText": "Devenir Partenaire"
+            "description": "Soutenez notre cause avec un don mensuel récurrent.",
+            "buttonText": "Donner mensuellement"
         }
     },
-    "impactText": "Soutenez nos programmes et ayez un impact durable sur la vie des enfants."
+    "impactText": "Votre contribution fait une réelle différence dans la vie des personnes dans le besoin.",
+    "faqTitle": "FAQ sur les Dons",
+    "faqItems": [
+        {
+            "question": "Mes dons sont-ils déductibles des impôts ?",
+            "answer": "Oui, tous les dons à Hearts for Sri Lanka sont déductibles des impôts. Vous recevrez également un reçu fiscal. Tous les dons sont traités via Stripe, un processeur de paiement sûr et fiable, 100% transparent."
+        },
+        {
+            "question": "Comment Hearts for Sri Lanka mesure-t-il l'efficacité de ses programmes ?",
+            "answer": "Hearts for Sri Lanka utilise divers indicateurs pour mesurer l'efficacité de ses programmes. Nous sommes une petite organisation en constante évolution. Nous sommes transparents sur nos programmes et leurs résultats, que nous partagerons dès qu'ils seront disponibles."
+        },
+        {
+            "question": "Comment mon don aidera-t-il les enfants dans le besoin ?",
+            "answer": "Vous pouvez en savoir plus sur nos programmes et comment votre don aide les enfants dans le besoin dans notre section mission."
+        }
+    ]
 }

@@ -1,12 +1,16 @@
 {
-    "formTitle": "Faire un don",
+    "title": "Faire un don",
     "secureHeader": "Don sécurisé",
-    "imageTitle": "Aidez à sauver la vie des enfants",
-    "imageDescription": "Votre don aide à garantir que les enfants reçoivent la nutrition, l'eau, la protection, l'éducation et les soins de santé dont ils ont besoin.",
     "giveOnce": "Donner une fois",
-    "giveMonthly": "Don mensuel",
+    "giveMonthly": "Donner mensuellement",
     "otherAmount": "Autre montant",
-    "donateButton": "Faire un don",
-    "successMessage": "Merci pour votre don !",
-    "errorMessage": "Une erreur est survenue lors du traitement de votre don."
+    "name": "Nom",
+    "email": "E-mail",
+    "continue": "Continuer vers le paiement",
+    "processing": "En cours de traitement...",
+    "back": "Retour",
+    "completeDonation": "Finaliser le don",
+    "imageAlt": "Soutenir les filles tamoules",
+    "helpTitle": "Aidez à sauver des vies d'enfants",
+    "helpDescription": "Votre don aide à garantir que les enfants reçoivent la nutrition, l'eau potable, la protection, l'éducation et les soins de santé dont ils ont besoin."
 }

@@ -34,20 +34,7 @@ export default function WaysToGive() {
     }
   ];
 
-  const faqItems = [
-    {
-      question: "Are my donations tax-deductible?",
-      answer: "Yes, all donations to Hearts for Sri Lanka are tax-deductible. You will also receive a tax receipt for your donation. All donations are processed through Stripe, a secure and trusted payment processor and 100% transparent."
-    },
-    {
-      question: "How does Hearts for Sri Lanka measure the effectiveness of its programs?",
-      answer: "Hearts for Sri Lanka uses various metrics and indicators to measure the effectiveness of its programs. We are a small organization and we are constantly learning and improving. We are also transparent about our programs and results and will share the results with you as soon as we have them."
-    },
-    {
-      question: "How will my donation help children in need?",
-      answer: "You can read more about our programs and how your donation will help children in need on our mission statement section."
-    }
-  ];
+  const faqItems = t('faqItems', { returnObjects: true });
 
   return (
     <section className="py-16">
@@ -85,9 +72,9 @@ export default function WaysToGive() {
         </div>
 
         <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8">Donation FAQ</h2>
+          <h2 className="text-3xl font-bold mb-8">{t('faqTitle')}</h2>
           <div className="space-y-4">
-            {faqItems.map((item, index) => (
+            {(faqItems as Array<{question: string; answer: string}>).map((item, index) => (
               <div 
                 key={index}
                 className="border-b border-gray-200"

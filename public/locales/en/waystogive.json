@@ -3,19 +3,29 @@
     "options": {
         "oneTime": {
             "title": "One-Time Donation",
-            "description": "Make an immediate impact with a gracious single contribution to our cause.",
-            "buttonText": "Donate Now"
+            "description": "Make an immediate impact with a single donation.",
+            "buttonText": "Donate Once"
         },
         "monthly": {
             "title": "Monthly Giving",
-            "description": "Provide ongoing support to our youth through regular monthly donations.",
-            "buttonText": "Join Monthly"
-        },
-        "corporate": {
-            "title": "Corporate Partnerships",
-            "description": "Connect your company in meaningful social responsibility initiatives in hopes of a bright future.",
-            "buttonText": "Partner With Us"
+            "description": "Support our cause with a recurring monthly donation.",
+            "buttonText": "Donate Monthly"
         }
     },
-    "impactText": "Support our programs and make a lasting impact on children's lives."
+    "impactText": "Your contribution makes a real difference in the lives of those in need.",
+    "faqTitle": "Donation FAQ",
+    "faqItems": [
+        {
+            "question": "Are my donations tax-deductible?",
+            "answer": "Yes, all donations to Hearts for Sri Lanka are tax-deductible. You will also receive a tax receipt for your donation. All donations are processed through Stripe, a secure and trusted payment processor and 100% transparent."
+        },
+        {
+            "question": "How does Hearts for Sri Lanka measure the effectiveness of its programs?",
+            "answer": "Hearts for Sri Lanka uses various metrics and indicators to measure the effectiveness of its programs. We are a small organization and we are constantly learning and improving. We are also transparent about our programs and results and will share the results with you as soon as we have them."
+        },
+        {
+            "question": "How will my donation help children in need?",
+            "answer": "You can read more about our programs and how your donation will help children in need on our mission statement section."
+        }
+    ]
 }

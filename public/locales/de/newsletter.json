@@ -1,10 +1,11 @@
 {
-    "title": "Bleiben Sie informiert",
-    "description": "Melden Sie sich für unseren Newsletter an, um Updates über unsere Arbeit und Möglichkeiten zur Unterstützung zu erhalten.",
-    "emailPlaceholder": "E-Mail-Adresse eingeben",
-    "subscribeButton": "Abonnieren",
-    "successMessage": "Vielen Dank für Ihr Abonnement!",
-    "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
-    "emailRequired": "E-Mail ist erforderlich",
-    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    "title": "Werden Sie aktiver Unterstützer",
+    "description": "Seien Sie der Erste, der von unseren humanitären Hilfsmaßnahmen in Notfällen erfährt.",
+    "firstName": "Vorname (Optional)",
+    "lastName": "Nachname (Optional)",
+    "email": "E-Mail-Adresse",
+    "submit": "ABSENDEN",
+    "submitting": "Wird gesendet...",
+    "success": "Danke für Ihre Anmeldung!",
+    "error": "Beim Senden Ihrer Informationen ist ein Fehler aufgetreten."
 }

@@ -48,10 +48,10 @@ export default function NewsletterSignup() {
 
       // Clear form after successful submission
       setFormData({ firstName: '', lastName: '', email: '' });
-      alert('Thank you for signing up!');
+      alert(t('successMessage'));
     } catch (error) {
       console.error('Error:', error);
-      alert('There was an error submitting your information.');
+      alert(t('errorMessage'));
     } finally {
       setIsSubmitting(false);
     }
@@ -66,10 +66,10 @@ export default function NewsletterSignup() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-foreground">
-          Be An Active Supporter
+          {t('title')}
         </h2>
         <p className="mb-8 text-muted-foreground">
-          Be the first to know about our humanitarian relief efforts in times of emergency.
+          {t('description')}
         </p>
         <form onSubmit={handleSubmit} className="max-w-3xl mx-auto flex flex-wrap gap-4">
           <div className="flex w-full gap-4 flex-col sm:flex-row">
@@ -78,7 +78,7 @@ export default function NewsletterSignup() {
               name="firstName"
               value={formData.firstName}
               onChange={handleInputChange}
-              placeholder="First Name (Optional)"
+              placeholder={t('firstName')}
               className="flex-1" 
             />
             <Input 
@@ -86,7 +86,7 @@ export default function NewsletterSignup() {
               name="lastName"
               value={formData.lastName}
               onChange={handleInputChange}
-              placeholder="Last Name (Optional)"
+              placeholder={t('lastName')}
               className="flex-1" 
             />
           </div>
@@ -97,7 +97,7 @@ export default function NewsletterSignup() {
               value={formData.email}
               onChange={handleInputChange}
               required
-              placeholder="Email address"
+              placeholder={t('email')}
               className="flex-grow" 
             />
             <motion.div 
@@ -107,10 +107,10 @@ export default function NewsletterSignup() {
               <Button 
                 type="submit"
                 disabled={isSubmitting}
-                className="px-8 bg-red-700 dark:bg-slate-800 text-white hover:bg-red-800 dark:hover:bg-slate-700"
+                className="px-8 bg-red-900 dark:bg-slate-800 text-white hover:bg-red-800 dark:hover:bg-slate-700"
                 variant="default"
               >
-                {isSubmitting ? 'Submitting...' : 'SUBMIT'}
+                {isSubmitting ? t('submitting') : t('submit')}
               </Button>
             </motion.div>
           </div>
