@@ -9,6 +9,7 @@ import WaysToGive from './components/WaysToGive';
 import RecentUpdates from './components/RecentUpdates';
 import NewsletterSignup from './components/NewsletterSignup';
 import Footer from './components/Footer';
+import DialogFlow from './components/DialogFlow';
 
 export default function Home() {
   const [isDarkMode] = useState(false);
@@ -17,7 +18,8 @@ export default function Home() {
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
-      <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <DialogFlow />
         <HeroSection />
         <section id="mission">
           <MissionStatement />
@@ -33,6 +35,7 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      <DialogFlow />
     </div>
   );
 }

@@ -15,6 +15,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// ES-lint was generating an error here, but it's not needed. ALL FIXED NOW
 function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => void }) {
   const stripe = useStripe();
   const elements = useElements();
@@ -56,7 +57,7 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
       <div className="flex justify-end">
         <button
           onClick={onClose}
-          className="p-2 hover:bg-gray-100 rounded-full"
+          className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300"
           aria-label="Close"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -71,14 +72,14 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
           <button
             type="button"
             onClick={onBack}
-            className="flex-1 py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-100"
+            className="flex-1 py-3 px-4 border border-gray-300 dark:border-gray-600 rounded-md text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           >
             Back
           </button>
           <button
             type="submit"
             disabled={!stripe || processing}
-            className="flex-1 py-3 px-4 bg-red-700 text-white rounded-md hover:bg-red-900 disabled:opacity-50 transition-colors"
+            className="flex-1 py-3 px-4 bg-red-700 text-white rounded-md hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {processing ? 'Processing...' : 'Complete Donation'}
           </button>
@@ -88,9 +89,17 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
   );
 }
 
-export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+export default function DonationForm({ 
+  isOpen, 
+  onClose,
+  defaultDonationType = 'once'
+}: { 
+  isOpen: boolean; 
+  onClose: () => void;
+  defaultDonationType?: 'once' | 'monthly';
+}) {
   const [clientSecret, setClientSecret] = useState<string | null>(null);
-  const [donationType, setDonationType] = useState<'once' | 'monthly'>('once');
+  const [donationType, setDonationType] = useState<'once' | 'monthly'>(defaultDonationType);
   const [amount, setAmount] = useState<string>('');
   const [customAmount, setCustomAmount] = useState<string>('');
   const [name, setName] = useState('');
@@ -233,10 +242,10 @@ export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onC
                         setAmount(preset);
                         setCustomAmount('');
                       }}
-                      className={`py-2 px-4 rounded-md border ${
+                      className={`py-2 px-4 rounded-md border transition-colors ${
                         amount === preset 
-                          ? 'border-red-500 bg-red-50 text-slate-700' 
-                          : 'border-gray-300'
+                          ? 'border-red-500 bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300' 
+                          : 'border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700'
                       }`}
                     >
                       ${preset}
@@ -245,8 +254,8 @@ export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onC
                 </div>
 
                 {/* Custom amount input */}
-                <div className="flex items-center border rounded-md">
-                  <span className="px-3 text-stone-500">$</span>
+                <div className="flex items-center border rounded-md bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600">
+                  <span className="px-3 text-gray-500 dark:text-gray-400">$</span>
                   <input
                     type="number"
                     placeholder="Other Amount"
@@ -255,7 +264,7 @@ export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onC
                       setCustomAmount(e.target.value);
                       setAmount('');
                     }}
-                    className="flex-1 p-2 focus:outline-none"
+                    className="flex-1 p-2 bg-transparent text-gray-900 dark:text-gray-100 focus:outline-none"
                     min="1"
                   />
                 </div>
@@ -266,7 +275,7 @@ export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onC
                   placeholder="Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-2 border rounded-md"
+                  className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   required
                 />
                 <input
@@ -274,7 +283,7 @@ export default function DonationForm({ isOpen, onClose }: { isOpen: boolean; onC
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-2 border rounded-md"
+                  className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   required
                 />
 

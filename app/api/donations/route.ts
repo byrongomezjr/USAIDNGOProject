@@ -12,7 +12,7 @@ if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_
 }
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-    apiVersion: '2024-11-20.acacia'
+    apiVersion: '2024-11-20.acacia' // Latest version of Stripe API
 });
 
 const supabase = createClient(
