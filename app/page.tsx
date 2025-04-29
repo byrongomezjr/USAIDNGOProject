@@ -12,9 +12,8 @@ import Footer from './components/Footer';
 import DialogFlow from './components/DialogFlow';
 
 export default function Home() {
-  const [isDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const { t } = useTranslation();
-  console.log(t);
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
@@ -35,7 +34,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-      <DialogFlow />
     </div>
   );
 }

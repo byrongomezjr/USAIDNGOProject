@@ -78,7 +78,6 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('contact.title')}</h3>
             <p>{t('contact.address')}</p>
-            <p>{t('contact.phone')}</p>
             <p>{t('contact.email')}</p>
           </div>
         </div>

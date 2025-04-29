@@ -55,7 +55,7 @@ function CheckoutForm({ onBack, onClose }: { onBack: () => void; onClose: () => 
       <div className="flex justify-end">
         <button
           onClick={onClose}
-          className="p-3 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300"
+          className="p-3 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-black dark:text-white"
           aria-label="Close"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
