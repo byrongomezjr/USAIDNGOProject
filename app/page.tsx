@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import HeroSection from './components/HeroSection';
 import MissionStatement from './components/MissionStatement';
 import WaysToGive from './components/WaysToGive';
@@ -12,8 +11,7 @@ import Footer from './components/Footer';
 import DialogFlow from './components/DialogFlow';
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const { t } = useTranslation();
+  const [isDarkMode] = useState(false);
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
